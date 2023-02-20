@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>提交成功</title>
+</head>
+<body>
+<h1>提交成功</h1>
+<p>您的个人信息已经成功提交！</p>
+<p>姓名：<span th:text="${registerBean.name}"></span></p>
+<p>年龄：<span th:text="${registerBean.age}"></span></p>
+<p>性别：<span th:text="${registerBean.gender}"></span></p>
+<p>邮箱：<span th:text="${registerBean.mail}"></span></p>
+</body>
+<button onclick="goToInputPage()">返回</button>
+<script>
+  function goToInputPage() {
+    window.location.href = "/input";
+  }
+</script>
+</html>
